@@ -1,5 +1,4 @@
 # cph-leetcode
-=======
 
 # CPH Leetcode Extension for VS Code
 CPH Leetcode is a Visual Studio Code extension aimed at enhancing the competitive programming experience. It seamlessly integrates Leetcode functionalities into the editor, enabling users to solve problems, fetch test cases, and execute solutions—all within VS Code. No need to switch between platforms—everything you need is right at your fingertips!
