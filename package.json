@@ -1,0 +1,66 @@
+{
+  "name": "cph-lc",
+  "publisher": "ravitejajaligama",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ravitejajaligama/cph-leetcode"
+  },
+  "displayName": "CPH: Leetcode (cph-lc)",
+  "description": "Run Test Cases for Leetcode Problems in VSCode",
+  "version": "0.0.3",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cph-lc.FetchTestCases",
+        "title": "CPH: Fetch Test Cases"
+      },
+      {
+        "command": "cph-lc.RunTestCases",
+        "title": "CPH: Run Test Cases"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "hi-there",
+          "title": "CPH Leetcode",
+          "icon": ""
+        }
+      ]
+    },
+    "views": {
+      "hi-there": [
+        {
+          "id": "explorerView",
+          "name": "CPH Leetcode",
+          "type": "webview"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.96.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.16.0",
+    "vscode": "^1.1.37"
+  },
+  "dependencies": {
+    
+  }
+}
